@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found - Graphic Era Hill University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lost and Found - Graphic Era Hill University</h1>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search items...">
+    </div>
+
+    <div class="sections">
+        <div class="lost-items">
+            <h2>Lost Items</h2>
+            <div id="lostItemsList"></div>
+        </div>
+
+        <div class="found-items">
+            <h2>Found Items</h2>
+            <div id="foundItemsList"></div>
+        </div>
+    </div>
+
+    <div class="upload-form">
+        <h3>Upload Item</h3>
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName">
+        
+        <label for="itemDescription">Description:</label>
+        <textarea id="itemDescription"></textarea>
+
+        <label for="itemImage">Upload Image:</label>
+        <input type="file" id="itemImage" accept="image/*">
+
+        <button onclick="uploadItem()">Upload</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
